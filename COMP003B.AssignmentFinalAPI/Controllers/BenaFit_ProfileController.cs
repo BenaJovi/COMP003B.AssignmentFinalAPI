@@ -11,11 +11,11 @@ namespace COMP003B.AssignmentFinalAPI.Controllers
         private List<BenaFit_Profile> _fBenaFit_Profile = new List<BenaFit_Profile>();
         public BenaFit_ProfileController()
         {
-            _fBenaFit_Profile.Add(new BenaFit_Profile { ProfileId = 1, ProfileHeight = "Frank Ocean", ProfileWeight = "Single", ProfileGender = "Swim Good" });
-            _fBenaFit_Profile.Add(new BenaFit_Profile { ProfileId = 2, ProfileHeight = "Don Toliver", ProfileWeight = "Love Sick", ProfileGender = "Do It Right" });
-            _fBenaFit_Profile.Add(new BenaFit_Profile { ProfileId = 3, ProfileHeight = "Kanye West", ProfileWeight = "Donda", ProfileGender = "Praise God" });
-            _fBenaFit_Profile.Add(new BenaFit_Profile { ProfileId = 4, ProfileHeight = "Future", ProfileWeight = "Monster", ProfileGender = "Codeine Crazy" });
-            _fBenaFit_Profile.Add(new BenaFit_Profile { ProfileId = 5, ProfileHeight = "Rauw Alejandro", ProfileWeight = "SATURNO", ProfileGender = "LEJOS DEL CIELO" });
+            _fBenaFit_Profile.Add(new BenaFit_Profile { ProfileId = 1, ProfileHeight = "Enter Height", ProfileWeight = "Enter Weight", ProfileGender = "Enter Gender" });
+            _fBenaFit_Profile.Add(new BenaFit_Profile { ProfileId = 2, ProfileHeight = "Enter Height", ProfileWeight = "Enter Weight ", ProfileGender = "Enter Gender" });
+            _fBenaFit_Profile.Add(new BenaFit_Profile { ProfileId = 3, ProfileHeight = "Enter Height", ProfileWeight = "Enter Weight", ProfileGender = "Enter Gender" });
+            _fBenaFit_Profile.Add(new BenaFit_Profile { ProfileId = 4, ProfileHeight = "Enter Height", ProfileWeight = "Enter Weight", ProfileGender = "Enter Gender" });
+            _fBenaFit_Profile.Add(new BenaFit_Profile { ProfileId = 5, ProfileHeight = "Enter Height", ProfileWeight = "Enter Weight", ProfileGender = "Enter Gender" });
 
         }
         [HttpGet]

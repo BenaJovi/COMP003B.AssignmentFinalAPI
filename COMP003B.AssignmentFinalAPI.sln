@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COMP003B.AssignmentFinalAPI", "COMP003B.AssignmentFinalAPI\COMP003B.AssignmentFinalAPI.csproj", "{F7682407-FC4F-4344-95F0-CC1366F89AA6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7682407-FC4F-4344-95F0-CC1366F89AA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7682407-FC4F-4344-95F0-CC1366F89AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7682407-FC4F-4344-95F0-CC1366F89AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7682407-FC4F-4344-95F0-CC1366F89AA6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B2AE132B-A059-4F65-A0E6-FB7F1BA8C967}
+	EndGlobalSection
+EndGlobal

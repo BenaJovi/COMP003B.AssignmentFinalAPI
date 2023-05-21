@@ -36,14 +36,14 @@ namespace COMP003B.AssignmentFinalAPI.Controllers
         }
         //Read
         [HttpPost]
-        public ActionResult<BenaFit_Profile> CreateMusic(BenaFit_Profile benaFit_Profile)
+        public ActionResult<BenaFit_Profile> CreateBenaFit_Profile(BenaFit_Profile benaFit_Profile)
         {
             benaFit_Profile.ProfileId = _fBenaFit_Profile.Max(s => s.ProfileId) + 1;
             _fBenaFit_Profile.Add(benaFit_Profile);
             return CreatedAtAction(nameof(GetBenaFit_ProfileById), new { id = benaFit_Profile.ProfileId, benaFit_Profile });
         }
         [HttpPut]
-        public IActionResult UpdateMusic(int id, BenaFit_Profile updatedBenaFit_Profile)
+        public IActionResult UpdateBenaFit_Profile(int id, BenaFit_Profile updatedBenaFit_Profile)
         {
             var benaFit_Profile = _fBenaFit_Profile.Find(s => s.ProfileId == id);
 
@@ -60,7 +60,7 @@ namespace COMP003B.AssignmentFinalAPI.Controllers
         }
         //Delete
         [HttpDelete]
-        public IActionResult DeleteMusic(int id)
+        public IActionResult DeleteBenaFit_Profile(int id)
         {
             var benaFit_Profile = _fBenaFit_Profile.Find(s => s.ProfileId == id);
 

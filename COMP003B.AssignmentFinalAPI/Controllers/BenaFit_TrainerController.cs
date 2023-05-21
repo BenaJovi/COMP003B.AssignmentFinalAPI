@@ -35,14 +35,14 @@ namespace COMP003B.AssignmentFinalAPI.Controllers
         }
         //Read
         [HttpPost]
-        public ActionResult<BenaFit_Trainer> CreateMusic(BenaFit_Trainer benaFit_Trainer)
+        public ActionResult<BenaFit_Trainer> CreateBenaFit_Trainer(BenaFit_Trainer benaFit_Trainer)
         {
             benaFit_Trainer.TrainerId = _fBenaFit_Trainer.Max(s => s.TrainerId) + 1;
             _fBenaFit_Trainer.Add(benaFit_Trainer);
             return CreatedAtAction(nameof(GetBenaFit_TrainerById), new { id = benaFit_Trainer.TrainerId, benaFit_Trainer });
         }
         [HttpPut]
-        public IActionResult UpdateMusic(int id, BenaFit_Trainer updatedbenaFit_Trainer)
+        public IActionResult UpdateBenaFit_Trainer(int id, BenaFit_Trainer updatedbenaFit_Trainer)
         {
             var benaFit_Trainer = _fBenaFit_Trainer.Find(s => s.TrainerId == id);
 
@@ -59,7 +59,7 @@ namespace COMP003B.AssignmentFinalAPI.Controllers
         }
         //Delete
         [HttpDelete]
-        public IActionResult DeleteMusic(int id)
+        public IActionResult DeleteBenaFit_Trainer(int id)
         {
             var benaFit_Trainer = _fBenaFit_Trainer.Find(s => s.TrainerId == id);
 
